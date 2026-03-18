@@ -10,7 +10,7 @@ variable "component" {
     type = string
 }
 
-variable app_version {
+variable "app_version" {
     type = string
     default = "v3"
 }
