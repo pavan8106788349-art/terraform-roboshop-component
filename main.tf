@@ -22,6 +22,7 @@ resource "terraform_data" "main" {
     user     = "ec2-user"
     password = "DevOps321"
     host     = aws_instance.main.private_ip
+    timeout     = "5m"
   }
 
   provisioner "file" {
